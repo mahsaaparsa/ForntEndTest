@@ -8,7 +8,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <style>
-
+	
   	@media screen and (min-width: 601px) {
   		p.img-description {
 		    font-size: 14px;
@@ -34,7 +34,7 @@
 		  	color:white;
 		}
 	}
-	div.colours-container{
+	div.colours-container, div.shapes-container{
 		background-color: black
 	}
 
@@ -46,6 +46,20 @@
     height: auto;
     float: center;
 	}
+	 img.img-shapes{
+	 	display: block;
+	    margin-left: auto;
+	    margin-right: auto;
+	    max-width: 100%;
+	    height: auto;
+	    float: center;
+	    border: 1px solid yellow
+	 }
+	 div.colours-container, div.shapes-container{
+	 	padding: 0 5%;
+	 	border: 1px solid blue;
+
+	 }
   </style>
 </head>
 <body>
@@ -55,7 +69,8 @@
 
 <div class="container-fluid colours-container">
 	<div>
-		<h2 class= "text-center" style="color:white;"><ins>TASTE THE COLOURS</ins></h2>
+		<h3 class= "text-center" style="color:white; margin-bottom:5%; border: 1px solid green;">TASTE THE COLOURS</h3>
+		<hr>
 	</div>
 	<div class="row">
     	<div class="col-sm-4">
@@ -88,25 +103,31 @@
 	    </div>
   	</div>
 </div>
-
 <!--shapes.png container-->
 
-<div class="container-fluid">
+<div class="container-fluid shapes-container">
 	<div class="row">
 		<div class="col-sm-4">
-			
+			<img src="shapes1.png" class="img-responsive img-shapes" alt="food" data-toggle="modal" data-target="#">
 		</div>
-		<div class="col-sm-4">
-		
-			<div>
-			</div
+		<div class="col-sm-4" style="border:1px solid red;">
+				
+			<img src="shapes2.png" class="img-responsive img-shapes" alt="camera" data-toggle="modal" data-target="#">
 			
-			<div>
-			</div>
-		
+			<img src="shapes3.png" class="img-responsive img-shapes" alt="carrots" data-toggle="modal" data-target="#" vertical-align=bottom>
+
 		</div>
 
-		<div class="col-sm-4">
+		<div class="col-sm-4" >
+			<h3 style="color:white;">
+			Taste: A FIVE-SENSE EXPERIENCE
+			</h3>
+			<p class="img-description">Our visual senses provide up to 28%of your taste experience. This is a theory Instagram chef jackues La Merde takes to the extreme. Serving up exquisite tasting plates </p>
+			<p class="img-description">-in fact made from gasstation ingredients </p>
+			<p class="img-description">-to her thousands of followers, she demonstrates how visual techniques affect our preception of food.</p>
+			<!--p>demonstrates how visual techniques affect our preception of food.</p-->
+			<h6 style="color:red;">FOOD THAT LOOKS ITS BEST</h6>
+			<p class="img-description">Enhance the flavour of your food by using a variety of colours and shapes to entice the eyes</p>
 		</div>
 	
 	</div>
