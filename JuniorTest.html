@@ -36,7 +36,12 @@
 		}
 		
 	}
-
+	.colours-container .row{
+		padding-bottom: 3%;
+	}
+	.shapes-container .row{
+		padding-top: 3%;
+	}
 	.col-sm-4{
 		padding-left: 5px;
 		padding-right: 5px;
@@ -50,32 +55,23 @@
 	}
 	 
 	img.img-col1{
-		display: block;
-	 	margin-left: auto;
-	    margin-right: auto;
-	    max-width: 100%;
-	    height: auto;
-	    border: 0px solid yellow;
+
 	}
 	img.img-col2-top{
-		display: block;
-	 	margin-left: auto;
-	    margin-right: auto;
-	    max-width: 100%;
-	    height: auto;
-	    border: 0px solid yellow;
+
 	    padding-bottom: 5px;
 	}
 	img.img-col2-bottom{
+
+	    padding-top: 5px;
+	}
+	img.img-shape{
 		display: block;
 	 	margin-left: auto;
 	    margin-right: auto;
 	    max-width: 100%;
 	    height: auto;
-	    border: 0px solid yellow;
-	    padding-top: 5px;
 	}
-	
 
   </style>
 </head>
@@ -83,11 +79,10 @@
 
 
 <!--colours.png container-->
-
-<div class="container">
+<div class="container colours-container">
 	<div>
-		<h3 class= "text-center" style="color:white; margin-bottom:5%;">TASTE THE COLOURS</h3>
-		<hr >
+		<h3 class= "text-center" style="color:white;">TASTE THE COLOURS</h3>
+		<hr style="margin-top:20px;">
 	</div>
 	<div class="row">
     	<div class="col-sm-4">
@@ -98,7 +93,7 @@
             	<h3 class="img-caption">Red</h3>
       			<p class="img-description">Red foods remind us of berries and soft fruits, so we can anticipate a sweet taste.</p>
     		</div>
-    	</div>
+    	</div>	<!--end of col1-->
 	    <div class="col-sm-4">
 	    	<a href="colours2.png" target="_blank">
 	    		<img src="colours2.png" class="img-responsive img-colours" alt="green">
@@ -107,7 +102,7 @@
             	<h3 class="img-caption">Green</h3>
       			<p class="img-description">Fresh, zingy green colours are reminiscent of unripe fruit, promising sour or acid flavours.</p>
     		</div>
-	    </div>
+	    </div>	<!--end of col2-->
 
 	    <div class="col-sm-4">
 	    	<a href="colours3.png" target="_blank">
@@ -117,26 +112,29 @@
             	<h3 class="img-caption">White</h3>
       			<p class="img-description">white foodsevoke memories of salt and salty flavours, driving the expectioan of a savoury treat.</p>
     		</div>
-	    </div>
-  	</div>
-</div>
-<!--shapes.png container-->
+	    </div>	<!--end of col3-->
+  	</div>	<!--end of row-->
+  	<hr>
+</div>	<!--end of colours.png container-->
 
-<div class="container">
+
+
+<!--shapes.png container-->
+<div class="container shapes-container">
 	<div class="row">
 		<div class="col-sm-4">
-			<img src="shapes1.png" class="img-responsive img-col1" alt="food" data-toggle="modal" data-target="#">
-		</div>
+			<img src="shapes1.png" class="img-responsive img-shape img-col1" alt="food" data-toggle="modal" data-target="#">
+		</div>	<!--end of col1-->
 		<div class="col-sm-4">
 			
-			<img src="shapes2.png" class="img-responsive img-col2-top" alt="camera" data-toggle="modal" data-target="#">
+			<img src="shapes2.png" class="img-responsive img-shape img-col2-top" alt="camera" data-toggle="modal" data-target="#">
 		
-			<img src="shapes3.png" class="img-responsive img-col2-bottom" alt="carrots" data-toggle="modal" data-target="#">
+			<img src="shapes3.png" class="img-responsive img-shape img-col2-bottom" alt="carrots" data-toggle="modal" data-target="#">
 			
 
-		</div>
+		</div> <!--end of col2-->
 
-		<div class="col-sm-4 col3-text" style="border:0px solid orange; margin-top:0px; display: inline-block;">
+		<div class="col-sm-4 col3-text" style="margin-top:0px; display: inline-block;">
 			<h3 style="color:white; margin-top:0px;">
 			Taste: A FIVE-SENSE EXPERIENCE
 			</h3>
@@ -147,10 +145,10 @@
 			-to her thousands of followers, she demonstrates how visual techniques affect our preception of food.</p>
 			<h6 style="color:red;">FOOD THAT LOOKS ITS BEST</h6>
 			<p class="img-description">Enhance the flavour of your food by using a variety of colours and shapes to entice the eyes</p>
-		</div>
+		</div>	<!--end of col3-->
 	
-	</div>
-</div>
+	</div>	<!--end of row-->
+</div>	<!--end of shapes.png container-->
 
 
 </body>
