@@ -9,7 +9,43 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <style>
 
+  	@media screen and (min-width: 601px) {
+  		p.img-description {
+		    font-size: 14px;
+		    display: inline-block;
+		    vertical-align: middle;
+		    color:white;
+		}
+		h3.img-caption{
+		  	font-size: 17px;
+		  	color:white;
+		}
+  	}
   
+	@media screen and (max-width: 600px) {
+		p.img-description {
+		    font-size: 10px;
+		    display: inline-block;
+		    vertical-align: middle;
+		    color:white;
+		}
+		h3.img-caption{
+		  	font-size: 15px;
+		  	color:white;
+		}
+	}
+	div.colours-container{
+		background-color: black
+	}
+
+	img.img-colours {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: auto;
+    float: center;
+	}
   </style>
 </head>
 <body>
@@ -19,7 +55,7 @@
 
 <div class="container-fluid colours-container">
 	<div>
-		<h2 class= "text-center colours-header"><ins>TASTE THE COLOURS</ins></h2>
+		<h2 class= "text-center" style="color:white;"><ins>TASTE THE COLOURS</ins></h2>
 	</div>
 	<div class="row">
     	<div class="col-sm-4">
