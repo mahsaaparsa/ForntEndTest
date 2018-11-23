@@ -10,5 +10,5 @@ function captureClicks(e) {
     }
     var tName;
     tName = temp.tagName;
-    console.log("Element with tag: " + tName + " has been clicked!");
+    console.log("Element with tag: " + tName + " is clicked!");
 }
