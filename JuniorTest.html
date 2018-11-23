@@ -1,88 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>FrontEndTest</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <style>
-	
-  	@media screen and (min-width: 601px) {
-  		p.img-description {
-		    font-size: 14px;
-		    display: inline-block;
-		    vertical-align: middle;
-		    color:white;
-		}
-		h3.img-caption{
-		  	font-size: 17px;
-		  	color:white;
-		}
-		
-  	}
-  
-	@media screen and (max-width: 600px) {
-		p.img-description {
-		    font-size: 10px;
-		    display: inline-block;
-		    vertical-align: middle;
-		    color:white;
-		}
-		h3.img-caption{
-		  	font-size: 15px;
-		  	color:white;
-		}
-		
-	}
-	.colours-container .row{
-		padding-bottom: 3%;
-	}
-	.shapes-container .row{
-		padding-top: 3%;
-	}
-	.col-sm-4{
-		padding-left: 5px;
-		padding-right: 5px;
-	}
-	img.img-colours {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 100%;
-    height: auto;
-	}
-	 
-	img.img-col1{
+	<title>FrontEndTest</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="shapesContainerStyle.css">
+	<link rel="stylesheet" type="text/css" href="coloursContainerStyle.css">
 
-	}
-	img.img-col2-top{
-
-	    padding-bottom: 5px;
-	}
-	img.img-col2-bottom{
-
-	    padding-top: 5px;
-	}
-	img.img-shape{
-		display: block;
-	 	margin-left: auto;
-	    margin-right: auto;
-	    max-width: 100%;
-	    height: auto;
-	}
-
-  </style>
 </head>
-<body style="background-color: black;">
+<body>
 
 
 <!--colours.png container-->
 <div class="container colours-container">
-	<div>
-		<h3 class= "text-center" style="color:white;">TASTE THE COLOURS</h3>
-		<hr style="margin-top:20px;">
+	<div class="header">
+		<h3 class= "text-center">TASTE THE COLOURS</h3>
+		
 	</div>
 	<div class="row">
     	<div class="col-sm-4">
@@ -114,7 +51,6 @@
     		</div>
 	    </div>	<!--end of col3-->
   	</div>	<!--end of row-->
-  	<hr>
 </div>	<!--end of colours.png container-->
 
 
@@ -122,31 +58,33 @@
 <!--shapes.png container-->
 <div class="container shapes-container">
 	<div class="row">
-		<div class="col-sm-4">
-			<img src="shapes1.png" class="img-responsive img-shape img-col1" alt="food" data-toggle="modal" data-target="#">
-		</div>	<!--end of col1-->
-		<div class="col-sm-4">
-			
-			<img src="shapes2.png" class="img-responsive img-shape img-col2-top" alt="camera" data-toggle="modal" data-target="#">
-		
-			<img src="shapes3.png" class="img-responsive img-shape img-col2-bottom" alt="carrots" data-toggle="modal" data-target="#">
-			
-
-		</div> <!--end of col2-->
-
-		<div class="col-sm-4 col3-text" style="margin-top:0px; display: inline-block;">
-			<h3 style="color:white; margin-top:0px;">
-			Taste: A FIVE-SENSE EXPERIENCE
-			</h3>
-			<p class="img-description">Our visual senses provide up to 28%of your taste experience. This is a theory Instagram chef jackues La Merde takes to the extreme. Serving up exquisite tasting plates 
-			<br>
-			-in fact made from gas station ingredients
-			<br>
-			-to her thousands of followers, she demonstrates how visual techniques affect our preception of food.</p>
-			<h6 style="color:red;">FOOD THAT LOOKS ITS BEST</h6>
-			<p class="img-description">Enhance the flavour of your food by using a variety of colours and shapes to entice the eyes</p>
-		</div>	<!--end of col3-->
-	
+		<div class="col-sm-8">
+			<div class="row">  <!--flex container-->
+			  	<div class="column">
+			    	<img src="shapes1.png" alt="food">
+			    
+			  	</div>
+			  	<div class="column">
+			    	<img src="shapes2.png" alt="take-photo">
+			    	<img src="shapes3.png" alt="carrots">
+		  		</div>  
+			</div>
+		</div> 
+	  	<div class="col-sm-4">
+	  		<article>
+				<h3>
+				TASTE: A FIVE-SENSE EXPERIENCE
+				</h3>
+				<hr>
+				<p>Our visual senses provide up to 28% of your taste experience. This is a theory Instagram chef jackues La Merde takes to the extreme. Serving up exquisite tasting plates 
+				<br>
+				- in fact made from gas station ingredients
+				<br>
+				- to her thousands of followers, she demonstrates how visual techniques affect our preception of food.</p>
+			</article>
+			<p class="">FOOD THAT LOOKS ITS BEST</h6>
+			<p >Enhance the flavour of your food by using a variety of colours and shapes to entice the eyes</p>
+		</div>
 	</div>	<!--end of row-->
 </div>	<!--end of shapes.png container-->
 
