@@ -8,6 +8,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="myModalStyle.css">
 	<link rel="stylesheet" type="text/css" href="shapesContainerStyle.css">
 	<link rel="stylesheet" type="text/css" href="coloursContainerStyle.css">
 
@@ -61,12 +62,12 @@
 		<div class="col-sm-8">
 			<div class="row">  <!--flex container-->
 			  	<div class="column">
-			    	<img src="shapes1.png" alt="food">
+			    	<img src="shapes1.png" alt="food" onmousedown="openModal(event)">
 			    
 			  	</div>
 			  	<div class="column">
-			    	<img src="shapes2.png" alt="take-photo">
-			    	<img src="shapes3.png" alt="carrots">
+			    	<img src="shapes2.png" alt="take-photo" onmousedown="openModal(event)">
+			    	<img src="shapes3.png" alt="carrots" onmousedown="openModal(event)">
 		  		</div>  
 			</div>
 		</div> 
@@ -88,6 +89,13 @@
 	</div>	<!--end of row-->
 </div>	<!--end of shapes.png container-->
 
+<div id="myModal" class="modal">
+	  <span class="close">&times;</span>
+	  <img id="modalImage" class="modal-content" >
+</div>
+
+<script src="modalJS.js"></script>
+<script src="captureClicks.js"></script>
 
 </body>
 </html>
