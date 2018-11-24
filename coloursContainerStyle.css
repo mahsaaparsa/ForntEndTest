@@ -1,19 +1,21 @@
 p{
-	font-family: Tahoma;
-	color: white;
 }
 	
 .colours-container .row{
 		padding-bottom: 3%;
+		flex-wrap: nowrap;
 }
 
-.colours-container img{
+
+
+/*.colours-container img{
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin: auto;
     max-width: 100%;
     height: auto;
-}
+}*/
 .colours-container img:hover {
 	opacity: 0.8;
 }
@@ -26,27 +28,32 @@ p{
 	padding-bottom: 10px;
 	border-bottom: solid;
 }
-.colours-container .hr{
-	width: 33%;
 
-}
-
-@media screen and (min-width: 601px) {
+@media screen and (min-width: 801px) {
 	p.img-description {
 		font-size: 14px;
 		display: inline-block;
 		vertical-align: middle;
 		color:white;
-		font:Futura;
 
 	}
 	h3.img-caption{
 		font-size: 17px;
 		color:white;
 	}
+	.colours-container img{
+
+	    width: 100%;
+	    height: auto;
+	}
+.colours-container .col-sm-4{
+	margin-left: 0px;
+	margin-right: 0px;
+	padding: 4px 4px;
+}
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
 	p.img-description {
 	    font-size: 10px;
 	    display: inline-block;
@@ -56,5 +63,12 @@ p{
 	h3.img-caption{
 	  	font-size: 15px;
 	  	color:white;
+	}
+	.colours-container img{
+		display: block;
+	    margin-left: auto;
+	    margin-right: auto;
+	    max-width: 100%;
+	    height: auto;
 	}
 }

@@ -20,7 +20,6 @@ body {
 		margin-bottom: 3%;
 		text-align: center;
 		font-size: 25px;
-		font-family: Futura;
 		color: white;
 
 	}
@@ -40,9 +39,8 @@ body {
 		margin-bottom: 3%;
 		text-align: center;
 		font-size: 15px;
-		font-family: Futura;
 		color: white;
-
+justify-content: ;
 	}
 }
 
