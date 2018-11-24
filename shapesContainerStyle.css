@@ -3,9 +3,9 @@
 }
 
 
-p{
+.shapes-container p, h3{
+	color: white;
 }
-
 .shapes-container .col-sm-4 h3{
 	margin-top: 0px;
 }
@@ -15,7 +15,14 @@ p{
     flex-wrap: wrap;
     padding: 0 4px;
 }
-
+#redCaption{
+	color: #cf1430;
+	font-size: smaller;
+	font-weight: 500;
+}
+#difFont{
+	font-family: arial;
+}
 #imagebox{
 	margin-bottom: 5%;
 }

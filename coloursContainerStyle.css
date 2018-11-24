@@ -1,16 +1,40 @@
-p{
+.captioned-figure {
+	display: table;
+	table-layout: fixed;
 }
-	
+.captioned-figure img {
+	margin-bottom: 10px;
+	border: 0;
+}
+
+.captioned-figure .figcaption {
+	display: table-caption;
+	caption-side: bottom;
+	color: white;
+	padding: 0 10%;
+	font-weight: lighter;
+}
+
+/* Container to add padding and border around the figure */
+.captioned-figure-outer {
+	display: inline-block;
+	margin-bottom: 1.5em;
+	padding: 0px;
+	background-color: black;
+}
+
+
 .colours-container .row{
-		padding-bottom: 3%;
-		flex-wrap: nowrap;
+	padding-bottom: 3%;
+	flex-wrap: nowrap;
 }
 
 
 .colours-container .col-sm-4{
-		margin-left: 0px;
-		margin-right: 0px;
-		padding: 0px 4px;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding: 0px 4px;
+	text-align: center;
 }
 
 
@@ -18,41 +42,3 @@ p{
 	opacity: 0.8;
 }
 
-
-@media screen and (min-width: 801px) {
-	p.img-description {
-		font-size: 14px;
-		color:white;
-
-	}
-	h3.img-caption{
-		font-size: 17px;
-		color:white;
-	}
-	.colours-container img{
-	    display: block;
-
-	    padding: 0px 0px;
-	    width: 100%;
-	    height: auto;
-	}
-}
-
-@media screen and (max-width: 800px) {
-	p.img-description {
-	    font-size: 10px;
-	    color:white;
-	}
-	h3.img-caption{
-	  	font-size: 15px;
-	  	color:white;
-	}
-	.colours-container img{
-	    display: block;
-
-	    margin-right: auto;
-	    margin-left: auto;
-	    max-width: 100%;
-	    height: auto;
-	}
-}

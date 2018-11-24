@@ -14,42 +14,56 @@
 
 </head>
 <body onmousedown="captureClicks(event)">
+
 <div class="header">
-		<button>TASTE THE COLOURS</button>
-		
-	</div>
+	<button>TASTE THE COLOURS</button>
+	
+</div>
 
 <!--colours.png container-->
 <div class="container colours-container">
 	
 	<div class="row">
     	<div class="col-sm-4">
-    		<a href="colours1.png" target="_blank">
-    			<img src="colours1.png" class="img-responsive img-colours" alt="red">
-    		</a>
-    		<div class="caption text-center">
-            	<h3 class="img-caption">Red</h3>
-      			<p class="img-description">Red foods remind us of berries and soft fruits, so we can anticipate a sweet taste.</p>
-    		</div>
+    		<div class="captioned-figure-outer">
+				<div class="captioned-figure">
+					<a href="colours1.png" target="_blank">
+    					<img src="colours1.png" class="img-responsive img-colours" alt="red">
+    				</a>
+					<div class="figcaption">
+						<h4 class="img-caption">Red</h4>
+						Red foods remind us of berries and soft fruits, so we can anticipate a sweet taste.
+					</div>
+				</div>
+			</div>
+
     	</div>	<!--end of col1-->
 	    <div class="col-sm-4">
-	    	<a href="colours2.png" target="_blank">
-	    		<img src="colours2.png" class="img-responsive img-colours" alt="green">
-	    	</a>
-    		<div class="caption text-center">
-            	<h3 class="img-caption">Green</h3>
-      			<p class="img-description">Fresh, zingy green colours are reminiscent of unripe fruit, promising sour or acid flavours.</p>
-    		</div>
+    		<div class="captioned-figure-outer">
+				<div class="captioned-figure">
+					<a href="colours2.png" target="_blank">
+    					<img src="colours2.png" class="img-responsive img-colours" alt="Green">
+    				</a>
+					<div class="figcaption">
+						<h4 class="img-caption">Green</h4>
+						Fresh, zingy green colours are reminiscent of unripe fruit, promising sour or acid flavours.
+					</div>
+				</div>
+			</div>
 	    </div>	<!--end of col2-->
 
 	    <div class="col-sm-4">
-	    	<a href="colours3.png" target="_blank">
-	    		<img src="colours3.png" class="img-responsive img-colours" alt="white">
-	    	</a>
-    		<div class="caption text-center">
-            	<h3 class="img-caption">White</h3>
-      			<p class="img-description">white foodsevoke memories of salt and salty flavours, driving the expectioan of a savoury treat.</p>
-    		</div>
+	    	<div class="captioned-figure-outer">
+				<div class="captioned-figure">
+					<a href="colours3.png" target="_blank">
+    					<img src="colours3.png" class="img-responsive img-colours" alt="White">
+    				</a>
+					<div class="figcaption">
+						<h4 class="img-caption">White</h4>
+						White foodsevoke memories of salt and salty flavours, driving the expectioan of a savoury treat.
+					</div>
+				</div>
+			</div>
 	    </div>	<!--end of col3-->
   	</div>	<!--end of row-->
 </div>	<!--end of colours.png container-->
@@ -83,8 +97,8 @@
 				<br>
 				- to her thousands of followers, she demonstrates how visual techniques affect our preception of food.</p>
 			</article>
-			<p class="">FOOD THAT LOOKS ITS BEST</h6>
-			<p >Enhance the flavour of your food by using a variety of colours and shapes to entice the eyes</p>
+			<p id="redCaption">FOOD THAT LOOKS ITS BEST</p>
+			<p id="difFont">Enhance the flavour of your food by using a variety of colours and shapes to entice the eyes</p>
 		</div>
 	</div>	<!--end of row-->
 </div>	<!--end of shapes.png container-->
