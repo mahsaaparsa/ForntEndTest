@@ -6,14 +6,14 @@
 		border-left: 0;
 		border-right: 0;
 		border-top: 0;
-		color: white;
-		font-size: 2.5rem;
+		color: @main_font_colour;
+		font-size: 1.5rem;
 		margin-bottom: 3%;
-		padding: 1.5% 0%;
+		padding: 1.5% 0;
 		
 		//change font size when screen width is less than 600px
-		@media screen @sm_scr_size {
-			font-size: 1.5rem;
+		@media @sm_scr_size {
+			font-size: 2.5rem;
 		}
 		&:hover {
 			cursor: default;

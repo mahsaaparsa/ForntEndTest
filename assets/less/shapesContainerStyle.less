@@ -26,8 +26,9 @@ article{
 	    padding: 0 4px;
 	}
 	.column {
-		flex: 50%;
-	    max-width: 50%;
+		flex: 100%;
+	    max-width: 100%;
+		
 		img {
 		    cursor: pointer;
 		    justify-content: center;
@@ -40,16 +41,16 @@ article{
 			    opacity: 0.8;
 			}
 		}
-		@media screen @sm_scr_size {
-	        flex: 100%;
-	        max-width: 100%;
+		@media @sm_scr_size {
+	        flex: 50%;
+	    	max-width: 50%;
 		}
 	}
 }
 .sec-title2{
-	font-size: 2.5rem;
-	@media screen @sm_scr_size {
-			font-size: 1.5rem;
+	font-size: 1.5rem;
+	@media @sm_scr_size {
+			font-size: 2.5rem;
 	}
 }
 

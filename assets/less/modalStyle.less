@@ -17,16 +17,15 @@
 .modal-content {
     display: block;
     margin: auto;
-    max-width: 80%;
-    
+    width: 100%;
     /* Add Animation */
     animation-name: zoom;
     animation-duration: 0.5s;
     -webkit-animation-name: zoom;
     -webkit-animation-duration: 0.5s;
 
-    @media screen @sm_scr_size {
-        width: 100%;
+    @media @sm_scr_size {
+        max-width: 80%;
     }
 
 }
@@ -46,7 +45,7 @@
     top: 15px;
     transition: 0.3s;
     &:hover,&:focus {
-        color: #bbb;
+        color: @grey_light_color;
         text-decoration: none;
         cursor: pointer;
     }
