@@ -1,9 +1,8 @@
 
 
 /* Modal Background */
-.modal {
-    background-color: rgb(0,0,0); 
-    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+.modal { 
+    background-color: @modal_background; 
     display: none; 
     height: 100%; 
     left: 0;
@@ -32,13 +31,6 @@
 
 }
 
-
-
-@-webkit-keyframes zoom {
-    from {-webkit-transform:scale(0)} 
-    to {-webkit-transform:scale(1)}
-}
-
 @keyframes zoom {
     from {transform:scale(0)} 
     to {transform:scale(1)}
@@ -46,12 +38,12 @@
 
 /* The Close Button */
 .close {
-    position: absolute;
-    top: 15px;
-    right: 35px;
-    color: #f1f1f1;
+    color: @grey_color;
     font-size: 4rem;
     font-weight: bold;
+    position: absolute;
+    right: 35px;
+    top: 15px;
     transition: 0.3s;
     &:hover,&:focus {
         color: #bbb;
