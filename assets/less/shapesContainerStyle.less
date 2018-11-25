@@ -1,0 +1,55 @@
+//elements
+article{
+	padding-top: 5px;
+}
+
+
+//classes
+.shapes-container{
+	p, h3{
+		color: @main_font_colour;
+	}
+	.row {
+	    display: flex;
+	    flex-wrap: wrap;
+	    padding: 0 4px;
+	}
+	.column {
+		flex: 50%;
+	    max-width: 50%;
+		img {
+		    cursor: pointer;
+		    justify-content: center;
+		    margin-top: 10px;
+		    padding: 0 4px;
+		    vertical-align: middle;
+		    width: 100%;
+		    &:hover {
+			    cursor: pointer;
+			    opacity: 0.8;
+			}
+		}
+		@media screen @sm_scr_size {
+	        flex: 100%;
+	        max-width: 100%;
+		}
+	}
+}
+.sec-title2{
+	font-size: 2.5rem;
+	@media screen @sm_scr_size {
+			font-size: 1.5rem;
+	}
+}
+#redCaption{
+	color: #cf1430;
+	font-size: smaller;
+	font-weight: 500;
+}
+#difFont{
+	font-family: arial;
+}
+#imagebox{
+	margin-bottom: 5%;
+}
+
